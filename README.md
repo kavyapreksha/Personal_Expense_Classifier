@@ -20,13 +20,21 @@ All data is saved locally using SQLite, ensuring privacy and persistence without
 
 ## 📁 Project Structure
 ```
-expense_tracker_app/
-├── app.py # Main Streamlit UI and app orchestration
-├── categorizer.py # Expense categorization logic
-├── db_utils.py # SQLite database utility functions
-├── requirements.txt # Python dependencies list
-├── .gitignore # Specifies files/folders to ignore in Git version control
-└── README.md # This README file you are reading now
+expense_classifier/               # Root project folder
+│
+├── modules/                     # Python package for modular code
+│   ├── __init__.py              # Empty file to mark this folder as a package
+│   ├── categorizer.py           # Expense categorization logic (categorize function)
+│   └── db_utils.py              # Database helper functions (SQLite and CSV loaders)
+│
+├── data/                        # Data files
+│   ├── expenses.db              # SQLite database file with expense data
+│   └── expenses.csv             # Sample CSV file for CSV upload/testing
+│
+├── expense_app.py               # Main Streamlit app script
+├── requirements.txt             # Project dependencies
+├── README.md                   # Project documentation (this file)
+
 ```
 
 ---
