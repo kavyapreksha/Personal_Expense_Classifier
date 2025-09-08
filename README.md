@@ -2,6 +2,7 @@
 
 A modular, user-friendly Streamlit application for tracking, categorizing, and analyzing your personal expenses.  
 All data is saved locally using SQLite, ensuring privacy and persistence without requiring any cloud or server setup.
+To deploy the app click here https://expenseclassifier.streamlit.app
 
 ---
 
